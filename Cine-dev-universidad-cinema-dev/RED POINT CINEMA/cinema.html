@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="./css/cinemaStyle.css">
+        <link rel="icon" href="./css/1024px-Video_camera_icon.svg.ico">
+        <title>REC CINEMA</title>
+</head>
+<body>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.14.1/dist/sweetalert2.all.min.js"></script>
+        <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><i class="fas fa-video"></i> REC CINEMA</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarButton">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                  <div class="collapse navbar-collapse" id="navbarButton">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio <i class="fas fa-home"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="promos.html">Promociones <i class="fas fa-percentage"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="proximamete.html">Próximamente <i class="fas fa-calendar-plus"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="tienda.html">Compras <i class="fas fa-cart-plus"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="cartelera.html">Horarios y cartelera <i class="fas fa-clock"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Reserva.html">Reservas <i class="fas fa-ticket-alt"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="login.html">Inicio de sesión <i class="fas fa-user"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+<main>
+        <section id="banners">
+                <img src="./img/banners.jpg" class="img-fluid" alt="Responsive image">
+        </section>
+        <section id="promociones">
+
+                <br><button onclick="AlertFunct()" type="button" class="btn btn-outline-warning"><i class="fas fa-heartbeat"></i> Información Covid-19</button>
+                <div class="contenedor">
+
+                        <article>
+                                <h4>Te cuidamos</h4>
+                                <div class="bg-image hover-overlay">
+                                        
+                                        <div class="mask"></div>
+                                        <img class="img-fluid" alt="Responsive image" src="img/bannermini3.jpg">
+                                </div>         
+                                </article>
+                        <article>
+                                <h4>Estamos listos</h4>
+                                <img class="img-fluid" alt="Responsive image" src="img/juntomini3.png">       
+                        </article>
+                        <article>
+                                <h4>Disfruta</h4>
+                                <img class="img-fluid" alt="Responsive image" src="img/promomini3.jpg">    
+                        </article>
+                </div>
+        <section id=peliculas>
+                <h3 class="icon-location">CARTELERA ACTIVA SAN SALVADOR</h3>
+                <div class="contenedor">
+                    
+                <article>
+                    <a href="trailers.html" target="_blank">
+                        <img id="imgS" class="img-fluid" src="img/mujer1.jpg">
+                        <h4 id="imgS"  class="icon-ticket">CARTELERA</h4>
+                     </a>
+                        <h4  id="imgS"  class="icon-comment" onclick="Alert1()">SIPNOSIS</h4>        
+                </article>
+                <article>
+                    <a href="blackwidow.html" target="_blank">
+                       <img id="imgS" class="img-fluid" src="img/viuda1.jpg">
+                       <h4 id="imgS"  class="icon-ticket">CARTELERA</h4>
+                    </a>
+                        <h4 id="imgS"  class="icon-comment" onclick="Alert2()"> SIPNOSIS</h4>
+                </article>
+                <article>
+                        <a href="adam.html" target="_blank">
+                        <img id="imgS" class="img-fluid" src="img/adam1.jpg">
+                        <h4 id="imgS"  class="icon-ticket">CARTELERA</h4>
+                        </a>
+                        <h4 id="imgS"  class="icon-comment" onclick="Alert3()"> SIPNOSIS</h4>  
+                </article>
+                <article>
+                    <a href="cruela.html" target="_blank">
+                       <img id="imgS" class="img-fluid" src="img/cruela1.jpg"> 
+                       <h4 id="imgS"  class="icon-ticket">CARTELERA</h4>
+                    </a>
+                        <h4  class="icon-comment" onclick="Alert4()"> SIPNOSIS</h4>  
+                </article>
+                <article>
+                    <a href="godzilla.html"target="_blank">
+                       <img id="imgS" class="img-fluid" src="img/gorila1.jpg">  
+                       <h4 id="imgS"  class="icon-ticket">CARTELERA</h4>
+                    </a>
+                        <h4 id="imgS"  class="icon-comment" onclick="Alert5()"> SIPNOSIS</h4>  
+                </article>
+                <article>
+                    <a href="fast.html" target="_blank">
+                        <img id="imgS" class="img-fluid" src="img/rapido1.jpg"> 
+                        <h4 id="imgS" style="cursor: pointer; color: #fff;" class="icon-ticket">CARTELERA</h4>
+                    </a>
+                        <h4 id="imgS"  class="icon-comment" onclick="Alert6()"> SIPNOSIS</h4>  
+                </article>
+                <article>
+                    <a href="red.html" target="_blank">
+                        <img id="imgS" class="img-fluid" src="img/red1.jpg"> 
+                        <h4 id="imgS" style="cursor: pointer; color: #fff;" class="icon-ticket">CARTELERA</h4>
+                    </a>
+                        <h4 id="imgS"  class="icon-comment" onclick="Alert7()"> SINOPSIS</h4>  
+                </article>
+                <article>
+                    <a href="minions.html" target="_blank">
+                        <img id="imgS" class="img-fluid" src="img/minions1.jpg">
+                        <h4 id="imgS" style="cursor: pointer; color: #fff;" class="icon-ticket">CARTELERA</h4>
+                    </a>
+                        <h4 id="imgS"  class="icon-comment" onclick="Alert8()"> SINOPSIS</h4>  
+                </article>
+                
+                </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h5 class="text-uppercase mb-4 font-weight-bold text-warning"><i class="fas fa-video"></i> Cinema SV</h5>
+                                <p style="color: #fff">La mejor calidad de cinematografía dentro del país, es por eso que contamos con formatos tecnología de última generación en el rubro de cines.</p>        
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Links importantes</h5>
+                            <p>
+                                <a href="carreras.html" class="text-white" > Se parte de nosotros</a>
+                            </p>
+                            <p>
+                                <a href="MV.html" class="text-white" > Misión y Visión</a>
+                            </p>
+                            <p>
+                                <a href="Devs.html" class="text-white" > Desarrolladores</a>
+                            </p>
+                            <p>
+                                <a href="https://getbootstrap.com/" class="text-white" > Tecnologías ocupadas</a>
+                            </p>
+                            
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contactanos</h5>
+                            <p>
+                                <a href="#" class="text-white" ><i class="fas fa-phone"></i> (+503) 2222-0000</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-white" ><i class="fas fa-envelope"></i> cinerec@cine.com</a>
+                            </p>
+                            <p>
+                                <a href="ubicacion.html" class="text-white" ><i class="fas fa-map-marker-alt"></i> San Salvador San Salvador, El Salvador</a>
+                            </p>
+                            </div>
+                            <div class="abcd col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Redes sociales</h5>
+                            <p>
+                                <a href="#" class="btn social-icon button" style="text-align: center;display: table-cell;vertical-align: middle;width: 30px;height: 40px !important;line-height: 1;font-size: 30px;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;color: #fff;background: none; background-color: #3b5998;" data-abc="true"><i class="fab fa-facebook-square"></i> </a> 
+                            </p>
+                            <p>
+                                <a href="#" class="btn social-icon button" style="text-align: center;display: table-cell;vertical-align: middle;width: 30px;height: 40px !important;line-height: 1;font-size: 30px;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;color: #fff;background: none; background-color: #00aced;"data-abc="true"><i class="fab fa-twitter-square"></i> </a> 
+                            </p>
+                            <p>
+                                <a href="#" class="btn social-icon button" style="text-align: center;display: table-cell;vertical-align: middle;width: 30px;height: 40px !important;line-height: 1;font-size: 30px;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;color: #fff;background: none; background-color: #bb0000;" data-abc="true"><i class="fab fa-youtube-square"></i> </a> 
+                            </p>
+                            <p>
+                                <a href="#" class="yoda btn social-icon button"  data-abc="true"><i class="fab fa-google-plus-g"></i></a> 
+                        </p>
+                
+                            </div>
+                            
+                </div>
+        </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

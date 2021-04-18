@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+        <link rel="stylesheet" href="./css/styleRs.css">
+        <link rel="icon" href="./css/1024px-Video_camera_icon.svg.ico">
+        <link rel="stylesheet" href="./css/cinemaStyle.css">
+        <title>REC CINEMA</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.14.1/dist/sweetalert2.all.min.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fas fa-video"></i> REC CINEMA</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarButton">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarButton">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="cinema.html">Inicio <i class="fas fa-home"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="promos.html">Promociones <i class="fas fa-percentage"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="proximamete.html">Próximamente <i class="fas fa-calendar-plus"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Compras <i class="fas fa-cart-plus"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cartelera.html">Horarios y cartelera <i class="fas fa-clock"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reserva.html">Reservas <i class="fas fa-ticket-alt"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Inicio de sesión <i class="fas fa-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="wrapper">
+        <h1>Restaurante RED CINEMA.</h1>
+        <table class="table table-hover table-dark text-center">
+          <thead>
+            <tr>
+              <th scope="col"># de comida</th>
+              <th scope="col">Apariencia</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Detalle</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td><img src="./img/jessica-loaiza-glqTtszXfM0-unsplash.jpg" alt=""></td>
+              <td>Hot-Dog</td>
+              <td>Hot-Dog de salchica polaca con o sin jalapeño.</td>
+              <td>$3.50</td>
+              <td><button class="btn btn-success" onclick="tienda()">Comprar</button></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=902&q=80" alt=""></td>
+              <td>Hamburguesa</td>
+              <td>Hamburguesa gourmet RED TASTE.</td>
+              <td>$4.40</td>
+              <td><button class="btn btn-success" onclick="tienda()">Comprar</button></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td><img src="https://images.unsplash.com/photo-1585647347483-22b66260dfff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt=""></td>
+              <td>Palomitas de maíz</td>
+              <td>¿Dulces o saladas?, las mejores palomitas a tu gusto</td>
+              <td>$5.35</td>
+              <td><button class="btn btn-success" onclick="tienda()">Comprar</button></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td><img src="https://images.unsplash.com/photo-1576712967455-c8d22580e9be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt=""></td>
+              <td>Dulces</td>
+              <td>Combo de chocolate, gomitas de osito, y galletas.</td>
+              <td>$7.50</td>
+              <td><button class="btn btn-success" onclick="tienda()">Comprar</button></td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td><img src="https://images.unsplash.com/photo-1570466199012-e4e9ca168641?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" alt=""></td>
+              <td>Nachos</td>
+              <td>Nachos con chili, jalapeño, y queso derretido.</td>
+              <td>$4.99</td>
+              <td><button class="btn btn-success" onclick="tienda()">Comprar</button></td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td><img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt=""></td>
+              <td>Pizza (Personal, Gigante, XL)</td>
+              <td>Pizza con ingredientes a tu gusto.</td>
+              <td>$7.55</td>
+              <td><button class="btn btn-success" onclick="tienda()">Comprar</button></td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td><img src="https://images.unsplash.com/photo-1588238142232-7108fb7dcbb6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" alt=""></td>
+              <td>Sodas</td>
+              <td>Pepsi, Fanta, Sprite, Coca-Cola, etc.</td>
+              <td>$1.50</td>
+              <td><button class="btn btn-success" onclick="tienda()">Comprar</button></td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td><img src="https://images.unsplash.com/photo-1563903370181-48241c5c8e21?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1127&q=80" alt=""></td>
+              <td>Agua</td>
+              <td>Agua cristal</td>
+              <td>$1.75</td>
+              <td><button class="btn btn-success" onclick="tienda()">Comprar</button></td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td><img src="https://images.unsplash.com/photo-1573620255542-9c61b48c74f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" alt=""></td>
+              <td>Pollo frito</td>
+              <td>Pollo frito RED CINEMA</td>
+              <td>$10.99</td>
+              <td><button class="btn btn-success" onclick="tienda()">Comprar</button></td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td><img src="https://images.unsplash.com/photo-1486736065690-45e0655d038a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt=""></td>
+              <td>Vaso coleccionable</td>
+              <td>Varia según película</td>
+              <td>$7.00</td>
+              <td><button class="btn btn-success" onclick="tienda()">Comprar</button></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+      <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h5 class="text-uppercase mb-4 font-weight-bold text-warning"><i class="fas fa-video"></i> Cinema SV</h5>
+                                <p style="color: #fff">La mejor calidad de cinematografía dentro del país, es por eso que contamos con formatos tecnología de última generación en el rubro de cines.</p>        
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Links importantes</h5>
+                            <p>
+                                <a href="carreras.html" class="text-white" > Se parte de nosotros</a>
+                            </p>
+                            <p>
+                                <a href="MV.html" class="text-white" > Misión y Visión</a>
+                            </p>
+                            <p>
+                                <a href="Devs.html" class="text-white" > Desarrolladores</a>
+                            </p>
+                            <p>
+                                <a href="https://getbootstrap.com/" class="text-white" > Tecnologías ocupadas</a>
+                            </p>
+                            
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contactanos</h5>
+                            <p>
+                                <a href="#" class="text-white" ><i class="fas fa-phone"></i> (+503) 2222-0000</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-white" ><i class="fas fa-envelope"></i> cinerec@cine.com</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-white" ><i class="fas fa-map-marker-alt"></i> San Salvador San Salvador, El Salvador</a>
+                            </p>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Redes sociales</h5>
+                            <p>
+                                <a href="#" class="btn social-icon button" style="text-align: center;display: table-cell;vertical-align: middle;width: 30px;height: 40px !important;line-height: 1;font-size: 30px;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;color: #fff;background: none; background-color: #3b5998;" data-abc="true"><i class="fab fa-facebook-square"></i> </a> 
+                            </p>
+                            <p>
+                                <a href="#" class="btn social-icon button" style="text-align: center;display: table-cell;vertical-align: middle;width: 30px;height: 40px !important;line-height: 1;font-size: 30px;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;color: #fff;background: none; background-color: #00aced;"data-abc="true"><i class="fab fa-twitter-square"></i> </a> 
+                            </p>
+                            <p>
+                                <a href="#" class="btn social-icon button" style="text-align: center;display: table-cell;vertical-align: middle;width: 30px;height: 40px !important;line-height: 1;font-size: 30px;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;color: #fff;background: none; background-color: #bb0000;" data-abc="true"><i class="fab fa-youtube-square"></i> </a> 
+                            </p>
+                            <p>
+                                <a href="#" class="btn social-icon button" style="text-align: center;display: table-cell;vertical-align: middle;width: 30px;height: 40px !important;line-height: 1;font-size: 30px;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;color: #fff;background: none; background-color: #dd4b39;" data-abc="true"><i class="fab fa-google-plus-g"></i></a> 
+                        </p>
+                
+                            </div>
+                            
+                </div>
+        </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
