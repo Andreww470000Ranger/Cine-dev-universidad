@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="./css/cinemaStyle.css">
+        <link rel="icon" href="./css/1024px-Video_camera_icon.svg.ico">
+
+        <title>REC CINEMA</title>
+</head>
+<body>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.14.1/dist/sweetalert2.all.min.js"></script>
+        <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#"><i class="fas fa-video"></i> REC CINEMA</a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarButton">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarButton">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="cinema.html">Inicio <i class="fas fa-home"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="promos.html">Promociones <i class="fas fa-percentage"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="proximamete.html">Próximamente <i class="fas fa-calendar-plus"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tienda.html">Compras <i class="fas fa-cart-plus"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cartelera.html">Horarios y cartelera <i class="fas fa-clock"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Reserva.html">Reservas <i class="fas fa-ticket-alt"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Inicio de sesión <i class="fas fa-user"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+<main>
+        <section id="banner">
+                <img src="./img/banners.jpg" class="img-fluid" alt="Responsive image">
+        </section>
+
+        <section id=peliculas>
+                <BR> <h3 class="icon-location">CARTELERA ACTIVA SAN SALVADOR</h3>
+               
+
+
+                <div class="contenedor">
+                    <article>  
+                    <img src="img/rapido1.jpg"> 
+                     
+                    </article>
+
+                    <article>
+                        
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qoUxP_h6DRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h4 style="cursor: pointer;" class="icon-comment" onclick="Alert6()">SIPNOSIS</h4>
+
+                    </article>
+                    <br>
+                    <article>
+                        <h1>HORARIOS DISPONIBLES DE LA SEMANA</h1>
+
+                    </article>
+                    <article>
+                        <button class="btn btn-dark float-left" type="button"><a href="cinema.html" style="font-size: 15px; color:#fff; text-decoration: none;">Regresar al inicio de página</a></button>
+                    </article>
+ 
+                    <div class="container">
+                    <table class="table table-hover table-dark text-center">
+                    <thead>
+                    <tr>
+                    <th >DIAS</th>
+                    <th >FUNCIONES</th>
+                    <th ><i class="fas fa-cart-plus"></i></th>
+                    </tr>
+                    </thead>
+            
+            <tbody>
+              <tr>
+                <td >LUNES</td>
+                <td style="text-align:center; color:white;" class="warning"> 
+
+                    <div class="wrap">
+                    <form action="" class="formulario">
+
+                 <div class="checkbox">
+                     <input type="checkbox" name="checkbox" id="checkbox1">
+                     <label for="checkbox1">10:00 AM</label>
+
+                     <input type="checkbox" name="checkbox" id="checkbox2">
+                     <label for="checkbox2">1:00 PM </label>
+
+                     <input type="checkbox" name="checkbox" id="checkbox3">
+                     <label for="checkbox3">6:30 PM</label>
+
+                 </div>
+                 </form>
+             </div>
+                <td ><button type="button" class="btn btn-success"
+                    onclick="AlertFunct1()" type="button" class="btn btn-outline-warning">COMPRAR</button></td>
+              </tr>      
+              <tr>
+                <td >MARTES</td>
+                <td style="text-align:center; color:white;" class="danger">
+                 
+                 <div class="wrap">
+                    <form action="" class="formulario">
+
+                 <div class="checkbox">
+                     <input type="checkbox" name="checkbox" id="checkbox4">
+                     <label for="checkbox4">10:00 AM</label>
+
+                     <input type="checkbox" name="checkbox" id="checkbox5">
+                     <label for="checkbox5">1:00 PM </label>
+
+                     <input type="checkbox" name="checkbox" id="checkbox6">
+                     <label for="checkbox6">6:30 PM</label>
+
+                 </div>
+                 </form>
+             </div>
+
+             <td ><button type="button" class="btn btn-success"
+                onclick="AlertFunct1()" type="button" class="btn btn-outline-warning">COMPRAR</button></td>
+
+              </tr>
+              <tr >
+                <td >MIERCOLES</td>
+                <td style="text-align:center; color:black;" class="success">
+
+                 <div class="wrap">
+                    <form action="" class="formulario">
+
+                 <div class="checkbox">
+                     <input type="checkbox" name="checkbox" id="checkbox7">
+                     <label for="checkbox7">11:00 AM</label>
+
+                     <input type="checkbox" name="checkbox" id="checkbox8">
+                     <label for="checkbox8">2:00 PM </label>
+
+                     <input type="checkbox" name="checkbox" id="checkbox9">
+                     <label for="checkbox9">4:30 PM</label>
+
+                 </div>
+                 </form>
+                <td ><button type="button" class="btn btn-success"
+                    onclick="AlertFunct1()" type="button" class="btn btn-outline-warning">COMPRAR</button></td>
+              </tr>
+              <tr >
+                <td >JUEVES</td>
+                <td style="text-align:center; color:black;" class="warning">
+
+                 <div class="wrap">
+                    <form action="" class="formulario">
+
+                 <div class="checkbox">
+                     <input type="checkbox" name="checkbox" id="checkbox10">
+                     <label for="checkbox10">10:20 AM</label>
+
+                     <input type="checkbox" name="checkbox" id="checkbox11">
+                     <label for="checkbox11">1:30 PM </label>
+
+                     <input type="checkbox" name="checkbox" id="checkbox12">
+                     <label for="checkbox12">7:30 PM</label>
+
+                 </div>
+                 </form>
+                <td ><button type="button" class="btn btn-success"
+                    onclick="AlertFunct1()" type="button" class="btn btn-outline-warning">COMPRAR</button></td>
+              </tr>
+              <tr >
+                <td >VIERNES</td>
+                <td style="text-align:center; color:black;" class="danger"
+
+                 <div class="wrap">
+                    <form action="" class="formulario">
+
+                 <div class="checkbox">
+                     <input type="checkbox" name="checkbox" id="checkbox13">
+                     <label for="checkbox13">10:00 AM</label>
+
+                     <input type="checkbox" name="checkbox" id="checkbox14">
+                     <label for="checkbox14">1:00 PM </label>
+
+                     <input type="checkbox" name="checkbox" id="checkbox15">
+                     <label for="checkbox15">6:30 PM</label>
+
+                 </div>
+                 </form>
+                <td ><button type="button" class="btn btn-success"
+                    onclick="AlertFunct1()" type="button" class="btn btn-outline-warning">COMPRAR</button></td>
+              </tr>
+              <tr >
+                <td >SABADO</td>
+                <td style="text-align:center; color:black;" class="success">
+
+                 <div class="wrap">
+                    <form action="" class="formulario">
+
+                 <div class="checkbox">
+                     <input type="checkbox" name="checkbox" id="checkbox16">
+                     <label for="checkbox16">10:15 AM</label>
+
+                     <input type="checkbox" name="checkbox" id="checkbox17">
+                     <label for="checkbox17">4:00 PM </label>
+
+                     <input type="checkbox" name="checkbox" id="checkbox18">
+                     <label for="checkbox18">6:30 PM</label>
+
+                 </div>
+                 </form>
+                <td ><button type="button" class="btn btn-success"
+                    onclick="AlertFunct1()" type="button" class="btn btn-outline-warning">COMPRAR</button></td>
+              </tr>
+              <tr >
+                <td >DOMINGO</td>
+                <td style="text-align:center; color:black;"  class="warning"
+
+                <div class="wrap">
+                    <form action="" class="formulario">
+
+                 <div class="checkbox">
+                     <input type="checkbox" name="checkbox" id="checkbox19">
+                     <label for="checkbox19">12:00 PM</label>
+
+                     <input type="checkbox" name="checkbox" id="checkbox20">
+                     <label for="checkbox20">3:30 PM </label>
+
+                     <input type="checkbox" name="checkbox" id="checkbox21">
+                     <label for="checkbox21">8:15 PM</label>
+
+                 </div>
+                 </form>
+                </div>
+
+                <td ><button type="button" class="btn btn-success"
+                 onclick="AlertFunct1()" type="button" class="btn btn-outline-warning">COMPRAR</button></td>
+              </tr>
+            
+            </tbody>
+          </table>
+    </div>
+    
+</main>
+
+<footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h5 class="text-uppercase mb-4 font-weight-bold text-warning"><i class="fas fa-video"></i> Cinema SV</h5>
+                                <p style="color: #fff">La mejor calidad de cinematografía dentro del país, es por eso que contamos con formatos tecnología de última generación en el rubro de cines.</p>        
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Links importantes</h5>
+                            <p>
+                                <a href="#" class="text-white" style="text-decoration: none;"> Se parte de nosotros</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-white" style="text-decoration: none;"> Misión y Visión</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-white" style="text-decoration: none;"> Desarrolladores</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-white" style="text-decoration: none;"> Tecnologías ocupadas</a>
+                            </p>
+                            
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contactanos</h5>
+                            <p>
+                                <a href="#" class="text-white" style="text-decoration: none;"><i class="fas fa-phone"></i> (+503) 2222-0000</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-white" style="text-decoration: none;"><i class="fas fa-envelope"></i> cinerec@cine.com</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-white" style="text-decoration: none;"><i class="fas fa-map-marker-alt"></i> San Salvador San Salvador, El Salvador</a>
+                            </p>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Redes sociales</h5>
+                            <p>
+                                <a href="#" class="btn social-icon button" style="text-align: center;display: table-cell;vertical-align: middle;width: 30px;height: 40px !important;line-height: 1;font-size: 30px;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;color: #fff;background: none; background-color: #3b5998;" data-abc="true"><i class="fab fa-facebook-square"></i> </a> 
+                            </p>
+                            <p>
+                                <a href="#" class="btn social-icon button" style="justify-content: center; text-align: center;display: table-cell;vertical-align: middle;width: 30px;height: 40px !important;line-height: 1;font-size: 30px;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;color: #fff;background: none; background-color: #00aced;"data-abc="true"><i class="fab fa-twitter-square"></i> </a> 
+                            </p>
+                            <p>
+                                <a href="#" class="btn social-icon button" style="text-align: center;display: table-cell;vertical-align: middle;width: 30px;height: 40px !important;line-height: 1;font-size: 30px;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;color: #fff;background: none; background-color: #bb0000;" data-abc="true"><i class="fab fa-youtube-square"></i> </a> 
+                            </p>
+                            <p>
+                                <a href="#" class="btn social-icon button" style="text-align: center;display: table-cell;vertical-align: middle;width: 30px;height: 40px !important;line-height: 1;font-size: 30px;-webkit-transition: all 0.4s ease;transition: all 0.4s ease;color: #fff;background: none; background-color: #dd4b39;" data-abc="true"><i class="fab fa-google-plus-g"></i></a> 
+                        </p>
+                
+                            </div>
+                            
+                </div>
+        </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

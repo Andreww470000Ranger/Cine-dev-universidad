@@ -17,6 +17,68 @@ function AlertFunct(){
             }
             })
 }
+
+function tienda(){
+    Swal.fire({
+            title: '¡Gracias por comprar en RED CINEMA!',
+            text: "Tu orden se verá reflejada en tu carrito de compras.",
+            icon: 'warning',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Cerrar'
+            }).then((result) => {
+            if (result.isConfirmed) {
+                    Swal.fire(
+                    'Gracias por tu preferencia',
+                    '¡Que lo disfrutes!',
+                    '<3>'
+                    )
+            }
+            })
+}
+
+function Resv(){
+    Swal.fire({
+            title: '¡Gracias por hacer una reserva!',
+            text: "Recuerda mostrar tu voucher al momento de ingresar a las instalaciones",
+            icon: 'warning',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Cerrar'
+            }).then((result) => {
+            if (result.isConfirmed) {
+                    Swal.fire(
+                    'Gracias por tu preferencia',
+                    '¡Siempre cuidamos y cuidaremos de ti!',
+                    '<3>'
+                    )
+            }
+            })
+}
+
+function AlertFunct1(){
+    Swal.fire({
+            title: '¡tu compra fue todo un exito !',
+            icon: 'warning',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Cerrar'
+            }).then((result) => {
+            if (result.isConfirmed) {
+                    Swal.fire(
+                    'Gracias por tu preferencia',
+                    '¡Siempre cuidamos y cuidaremos de ti!',
+                    '<3>'
+                    )
+            }
+            })
+}
+
+
+
 function Alert1(){
     Swal.fire({
         title: 'Wonder Woman',
@@ -108,3 +170,4 @@ function Alert9()
         footer: '<p>:c </p>'
       })
 }
+
